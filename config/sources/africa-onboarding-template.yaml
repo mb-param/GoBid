@@ -1,0 +1,9 @@
+country: South Africa
+portal: eTenders
+base_url: https://www.etenders.gov.za/
+auth_required: false
+schedule_cron: "0 */6 * * *"
+focus:
+  - IT Services
+  - AI
+  - Software Development

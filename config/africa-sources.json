@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "focus_categories": [
+    "it_services",
+    "ai_ml",
+    "software_development",
+    "digital_transformation",
+    "cloud_infrastructure"
+  ],
+  "countries": [
+    {
+      "country": "South Africa",
+      "status": "pilot",
+      "portals": [
+        {
+          "name": "National Treasury eTenders",
+          "base_url": "https://www.etenders.gov.za/",
+          "schedule": "0 */6 * * *",
+          "auth_required": false
+        }
+      ]
+    },
+    {
+      "country": "Kenya",
+      "status": "planned",
+      "portals": [
+        {
+          "name": "PPIP",
+          "base_url": "https://tenders.go.ke/",
+          "schedule": "0 7 * * *",
+          "auth_required": false
+        }
+      ]
+    },
+    {
+      "country": "Nigeria",
+      "status": "planned",
+      "portals": [
+        {
+          "name": "BPP",
+          "base_url": "https://bpp.gov.ng/",
+          "schedule": "0 8 * * *",
+          "auth_required": false
+        }
+      ]
+    }
+  ]
+}
