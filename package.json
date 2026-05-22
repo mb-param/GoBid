@@ -1,0 +1,34 @@
+{
+  "name": "tender-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "crawl": "node src/commands/crawlOnce.js",
+    "crawl:portal": "node src/commands/crawlOnce.js --portal",
+    "login": "node src/commands/loginPortal.js",
+    "login:multi": "node src/commands/loginMultiplePortals.js",
+    "worker": "node src/queue/workers.js",
+    "workers": "node src/queue/runAllWorkers.js",
+    "scheduler": "node src/orchestrator/scheduler.js",
+    "api": "node src/api/server.js",
+    "redis:ping": "node src/scripts/redisPing.js",
+    "ops-console": "npm --prefix operator-console run dev",
+    "test": "echo \"Use npm run crawl against dev stack\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.66.0",
+    "bullmq": "^5.76.10",
+    "crawlee": "^3.16.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.1",
+    "mongoose": "^9.6.2",
+    "playwright": "^1.60.0"
+  }
+}
